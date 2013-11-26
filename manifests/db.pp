@@ -4,7 +4,7 @@ define mysql::db (
   $password,
   $charset     = 'utf8',
   $collate     = 'utf8_general_ci',
-  $host        = 'localhost',
+  $host        = '*',
   $grant       = 'ALL',
   $sql         = '',
   $enforce_sql = false,
