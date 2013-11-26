@@ -193,7 +193,7 @@ class mysql::params {
     },
     'mysqld'                  => {
       'basedir'               => $mysql::params::basedir,
-      'bind_address'          => '127.0.0.1',
+      'bind_address'          => '0.0.0.0',
       'datadir'               => $mysql::params::datadir,
       'expire_logs_days'      => '10',
       'key_buffer'            => '16M',
