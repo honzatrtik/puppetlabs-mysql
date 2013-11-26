@@ -12,7 +12,7 @@ class mysql::server::root_password {
 
     file { "${::root_home}/.my.cnf":
       content => template('mysql/my.cnf.pass.erb'),
-      require => Mysql_user['root@localhost'],
+      require => Mysql_user['root@*'],
     }
   }
 
